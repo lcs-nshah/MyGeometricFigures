@@ -27,7 +27,7 @@ struct SquareBasedPyramidView: View {
             //HEIGHT SLIDER
             
             //Label and current value
-            Text("Height: \(currentSquareBasedPyramid.height.formatted())")
+            Text("Height (h): \(currentSquareBasedPyramid.height.formatted())")
             
             //Slider control
             Slider(
@@ -36,10 +36,12 @@ struct SquareBasedPyramidView: View {
                 step: 1.0
             )
             
+            Spacer()
+            
             //BASE LENGTH SLIDER
             
             //Label and current value
-            Text("Base Length")
+            Text("Base Length (b): \(currentSquareBasedPyramid.baseLength.formatted())")
             
             //Slider control
             Slider(
@@ -48,9 +50,21 @@ struct SquareBasedPyramidView: View {
                 step: 1.0
             )
             
-            //Current Value
-            Text("Base Length is: \(currentSquareBasedPyramid.baseLength.formatted())")
+            //OUTPUT
+            Text("Surface Area: \(currentSquareBasedPyramid.surfaceArea)")
+            Spacer()
             
+            Text("Volume: \(currentSquareBasedPyramid.volume)")
+            Spacer()
+            
+            Text("Base Area: \(currentSquareBasedPyramid.baseArea)")
+            Spacer()
+            
+            Text("Triangle Area: \(currentSquareBasedPyramid.triangleArea)")
+            Spacer()
+            
+            Text("Slant Height: \(currentSquareBasedPyramid.slantHeight)")
+            Spacer()
             
         }
     }
