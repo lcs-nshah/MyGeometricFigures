@@ -28,6 +28,7 @@ struct SquareBasedPyramidView: View {
             
             //Label and current value
             Text("Height (h): \(currentSquareBasedPyramid.height.formatted())")
+                .font(.system(.title2, design: .rounded).weight(.bold))
             
             //Slider control
             Slider(
@@ -42,6 +43,7 @@ struct SquareBasedPyramidView: View {
             
             //Label and current value
             Text("Base Length (b): \(currentSquareBasedPyramid.baseLength.formatted())")
+                .font(.system(.title2, design: .rounded).weight(.bold))
             
             //Slider control
             Slider(
@@ -50,23 +52,36 @@ struct SquareBasedPyramidView: View {
                 step: 1.0
             )
             
+            Spacer()
+            
             //OUTPUT
             Text("Surface Area: \(currentSquareBasedPyramid.surfaceArea)")
+                .font(.system(.title3, design: .rounded).weight(.bold))
+                .frame(width: 300, height: 1, alignment: .topLeading)
             Spacer()
             
             Text("Volume: \(currentSquareBasedPyramid.volume)")
+                .font(.system(.title3, design: .rounded).weight(.bold))
+                .frame(width: 300, height: 1, alignment: .topLeading)
+            Spacer()
             Spacer()
             
             Text("Base Area: \(currentSquareBasedPyramid.baseArea)")
+                .font(.system(.headline, design: .rounded))
+                .frame(width: 300, height: 1, alignment: .topLeading)
             Spacer()
             
             Text("Triangle Area: \(currentSquareBasedPyramid.triangleArea)")
+                .font(.system(.headline, design: .rounded))
+                .frame(width: 300, height: 1, alignment: .topLeading)
             Spacer()
             
-            Text("Slant Height: \(currentSquareBasedPyramid.slantHeight)")
+            Text("Slant Height (s): \(currentSquareBasedPyramid.slantHeight)")
+                .font(.system(.headline, design: .rounded))
+                .frame(width: 300, height: 1, alignment: .topLeading)
             Spacer()
-            
         }
+        .padding(45)
     }
 }
 
